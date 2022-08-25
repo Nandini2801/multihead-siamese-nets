@@ -3,6 +3,7 @@ from argparse import ArgumentParser
 
 import tensorflow as tf
 from tqdm import tqdm
+import pickle
 
 from data import dataset_type
 from data.dataset import Dataset
