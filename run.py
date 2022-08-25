@@ -210,6 +210,8 @@ def predict(
             )
         )
         saver.restore(session, last_checkpoint)
+        with open('my_pic.pickle','wb') as f:
+            pickle.dump(saver, f)
         while True:
             x1 = input('First sentence:')
             x2 = input('Second sentence:')
