@@ -210,6 +210,7 @@ def predict(
                 experiment_name,
             )
         )
+        saver.restore(session, last_checkpoint)
 
         while True:
             x1 = input('First sentence:')
